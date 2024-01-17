@@ -1,0 +1,16 @@
+!dist/
+.commitlintrc.json
+.eslintrc.json
+.huskyrc.json
+.lintstagedrc
+.releaserc
+tsconfig.*
+.gitlab-ci.yml
+.yarn/
+.devenv.ver.json
+.npmrc
+.addTag.sh
+inquirer.mjs
+turbo.json
+updateRootVersion.sh
+pnpm-*

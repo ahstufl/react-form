@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": [
+    "./src/**/*.tsx",
+    "./src/**/*.ts"
+  ],
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "composite": true,
+    "incremental": true,
+    "rootDir": "./src",
+    "outDir": "./dist/esm",
+    "declarationDir": "./dist/types"
+  },
+  "references": []
+}

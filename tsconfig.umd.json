@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": [
+    "./src/**/*.tsx",
+    "./src/**/*.ts"
+  ],
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "UMD",
+    "composite": true,
+    "incremental": true,
+    "rootDir": "./src",
+    "outDir": "./dist/umd",
+    "declarationDir": "./dist/types"
+  },
+  "references": []
+}

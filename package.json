@@ -1,0 +1,41 @@
+{
+  "name": "react-form",
+  "version": "2.1.12",
+  "description": "",
+  "main": "dist/umd/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "pnpm build:umd && pnpm build:esm",
+    "build:umd": "tsc -p tsconfig.umd.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:umd:watch": "pnpm build:umd -w --noUnusedLocals false --noUnusedParameters false",
+    "build:esm:watch": "pnpm build:esm -w --noUnusedLocals false --noUnusedParameters false",
+    "build:dry": "pnpm tsc -p tsconfig.json --noEmit",
+    "build:clean": "pnpm clean && pnpm build"
+  },
+  "keywords": [],
+  "license": "UNLICENSED",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "devDependencies": {
+    "@luban/style": "workspace:*",
+    "@types/react": "^17.0.15",
+    "react": "^16.8 || ^17.x"
+  },
+  "dependencies": {
+    "@luban/ui-icon": "workspace:*",
+    "@luban/ui-label": "workspace:*",
+    "@luban/ui-stack": "workspace:*",
+    "@luban/ui-upload": "workspace:*",
+    "@luban/ui-utils": "workspace:*",
+    "@luban/validator": "^1.6.3"
+  },
+  "peerDependencies": {
+    "@luban/style": "workspace:*",
+    "@types/react": "^17.0.15",
+    "react": "^16.8 || ^17.x"
+  },
+  "publishConfig": {
+    "registry": "http://nexus3.luban.fit/repository/npm-luban/"
+  }
+}
